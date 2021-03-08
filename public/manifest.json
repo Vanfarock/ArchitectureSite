@@ -1,0 +1,9 @@
+{
+  "short_name": "Prova de suficiência",
+  "name": "Prova de suficiência Desenvolvimento Web I",
+  "icons": [ ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
