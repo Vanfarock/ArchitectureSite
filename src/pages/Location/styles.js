@@ -10,5 +10,6 @@ export const LocationContainer = styled.div`
 `;
 
 export const Map = styled.iframe`
+    border: 1px solid ${props => props.theme.darkerBackgroundColor};
     width: 100%;
 `;

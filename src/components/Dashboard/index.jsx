@@ -44,8 +44,11 @@ export default function Dashboard(props) {
 
     return (
         <DashboardContainer>
-            <Arrow className="material-icons md-36" side="left" hide={hideArrows}
-                   onClick={() => updatePosition(position + POSITION_MOVEMENT)}>chevron_left</Arrow>
+            <Arrow icon="chevron-left" 
+                   side="left" 
+                   hide={hideArrows} 
+                   className="squared"
+                   onClick={() => updatePosition(position + POSITION_MOVEMENT)} />
             <CardContainer ref={cardContainer} position={position}>
                 
                 {items.map((item, index) => 
@@ -53,8 +56,11 @@ export default function Dashboard(props) {
                 )}
 
             </CardContainer>
-            <Arrow className="material-icons md-36" side="right" hide={hideArrows}
-                   onClick={() => updatePosition(position - POSITION_MOVEMENT)}>chevron_right</Arrow>
+            <Arrow icon="chevron-right" 
+                   side="right" 
+                   hide={hideArrows} 
+                   className="squared"
+                   onClick={() => updatePosition(position - POSITION_MOVEMENT)} />
         </DashboardContainer>
     )
 }

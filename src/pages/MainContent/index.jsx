@@ -4,6 +4,7 @@ import HomePage from '../HomePage';
 import LastPosts from '../LastPosts';
 import Gallery from '../Gallery';
 import Location from '../Location';
+import Footer from '../Footer';
 import { MainContainer } from './styles';
 
 export default function MainContent() {
@@ -14,6 +15,7 @@ export default function MainContent() {
             <LastPosts />
             <Gallery />
             <Location />
+            <Footer />
         </MainContainer>
     )
 }

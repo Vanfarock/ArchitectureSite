@@ -17,5 +17,6 @@ export const LogoName = styled.h1`
 `;
 
 export const IntroductionImageElement = styled.img`
+    margin-top: 30px;
     width: 60%;
 `;

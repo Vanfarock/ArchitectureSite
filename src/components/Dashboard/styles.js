@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const DashboardContainer = styled.div`
     display: flex;
@@ -35,7 +36,13 @@ export const CardContainer = styled.div`
     }
 `;
 
-export const Arrow = styled.span`
+export const Arrow = styled(FontAwesomeIcon)`
+    &.squared {
+        width: 36px;
+        height: 36px;
+        padding: 2px;
+    }
+
     border-radius: 50%;
 
     text-align: center;
