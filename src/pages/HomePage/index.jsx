@@ -8,7 +8,7 @@ import { HomeContainer,
 export default function HomePage() {
     return (
         <HomeContainer>
-            <LogoName>Bruna Eliza Martins<br /> Balestieri</LogoName>
+            <LogoName>Random name</LogoName>
             <Button>Cases</Button>
             <IntroductionImageElement src={IntroductionImage} alt="Imagem de introdução" />
         </HomeContainer>

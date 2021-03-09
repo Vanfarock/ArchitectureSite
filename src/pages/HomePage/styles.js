@@ -6,6 +6,7 @@ export const HomeContainer = styled.div`
     align-items: center;
 
     padding: 0 var(--base-padding);
+    margin-bottom: 30px;
 `;
 
 export const LogoName = styled.h1`

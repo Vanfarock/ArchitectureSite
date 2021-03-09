@@ -6,10 +6,14 @@ export const DashboardContainer = styled.div`
     align-items: center;
 
     width: 100%;
+    padding: 5px;
 
     position: relative;
 
     overflow-x: hidden;
+
+    /* border: 1px solid ${props => props.theme.darkerBackgroundColor};
+    border-radius: 3px; */
 `;
 
 export const CardContainer = styled.div`
