@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const MenuContainer = styled.nav`
     width: 100%;
@@ -13,7 +14,6 @@ export const MenuContainer = styled.nav`
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 
     padding: 0 var(--base-padding);
-    /* padding: 15px 20%; */
 
     margin-bottom: 30px;
 `;
@@ -46,14 +46,15 @@ export const MenuList = styled.ul`
 `;
 
 export const MenuListItem = styled.li`
-    font-weight: lighter;
     text-decoration: none;
     padding: 20px;
-    
-    &:hover {
-        background-color: ${props => props.theme.primaryColor};
-
-        cursor: pointer;
-    }
 `;
 
+export const MenuListItemLink = styled(Link)`
+    text-decoration: none;
+    transition: all .4s ease;
+
+    &:hover {
+        font-weight: bold;
+    }
+`;

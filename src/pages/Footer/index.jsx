@@ -3,6 +3,7 @@ import Button from '../../components/Button';
 import { FooterContainer,
          FooterContent,
          FooterColumn,
+         FooterRow,
          FooterMenuTitle,
          FooterMenuContent } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,6 +22,10 @@ export default function Footer() {
                     <FooterMenuTitle>Contatos</FooterMenuTitle>
                     <FooterMenuContent>(47)99999-9999</FooterMenuContent>
                     <FooterMenuContent>(47)99999-9999</FooterMenuContent>
+                    <FooterRow>
+                        <FontAwesomeIcon size="2x" icon={["fab", "facebook"]}  />
+                        <FontAwesomeIcon size="2x" icon={["fab", "instagram"]}  />
+                    </FooterRow>
                 </FooterColumn>
                 <FooterColumn>
                     <FooterMenuTitle>Endereço</FooterMenuTitle>
@@ -28,11 +33,7 @@ export default function Footer() {
                     <FooterMenuContent>Blumenau, Santa Catarina, Brasil</FooterMenuContent>
                 </FooterColumn>
                 <FooterColumn>
-                    <FontAwesomeIcon icon={["fab", "facebook"]}  />
-                    <FontAwesomeIcon icon={["fab", "instagram"]}  />
-                </FooterColumn>
-                <FooterColumn>
-                    <Button>Solicitar cotação</Button>
+                    <Button>Solicitar orçamento</Button>
                 </FooterColumn>
             </FooterContent>
         </FooterContainer>

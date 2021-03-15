@@ -1,10 +1,10 @@
 import React from 'react';
 import { MenuContainer,
          MenuLeftSide,
-        //  MenuIcon,
          Logo,
          MenuList,
-         MenuListItem } from './styles';
+         MenuListItem,
+         MenuListItemLink,} from './styles';
 
 export default function Menu() {
     return (
@@ -13,9 +13,15 @@ export default function Menu() {
                 <Logo className="teste">Random name</Logo>
             </MenuLeftSide>
             <MenuList>
-                <MenuListItem>Cases</MenuListItem>
-                <MenuListItem>Contato</MenuListItem>
-                <MenuListItem>Solicitar cotação</MenuListItem>
+                <MenuListItem>
+                    <MenuListItemLink to="/cases">Cases</MenuListItemLink>
+                </MenuListItem>
+                <MenuListItem>
+                    <MenuListItemLink to="/contacts">Contato</MenuListItemLink>
+                </MenuListItem>
+                <MenuListItem>
+                    <MenuListItemLink to="/budget">Solicitar orçamento</MenuListItemLink>
+                </MenuListItem>
             </MenuList>
         </MenuContainer>
     )

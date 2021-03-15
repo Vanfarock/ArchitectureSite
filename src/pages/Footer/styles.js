@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     background: ${props => props.theme.darkerBackgroundColor};
 
     padding: 5px var(--base-padding);
@@ -28,8 +28,16 @@ export const FooterColumn = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+`;
 
-    /* flex: 1; */
+export const FooterRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 5px;
+    width: 100%;
 `;
 
 export const FooterMenuTitle = styled.p`
