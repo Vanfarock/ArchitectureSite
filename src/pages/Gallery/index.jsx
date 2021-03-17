@@ -37,7 +37,7 @@ export default function Gallery() {
     },];
 
     return (
-        <GalleryContainer>
+        <GalleryContainer id="gallery">
             <Title>Galeria</Title>
             <Dashboard name="Gallery" data={data} />
         </GalleryContainer>

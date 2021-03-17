@@ -7,6 +7,7 @@ export const LocationContainer = styled.div`
 
     margin-top: var(--base-component-distance);
     padding: 0 var(--base-padding);
+    width: 100%;
 `;
 
 export const Map = styled.iframe`

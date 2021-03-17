@@ -20,4 +20,8 @@ export const StyledButton = styled.button`
 
         background: ${props => props.theme.darkerPrimaryColor};
     }
+
+    & > a {
+        color: ${props => props.theme.fontColorOnPrimary};
+    }
 `;

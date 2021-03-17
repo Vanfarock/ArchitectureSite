@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageTeste from '../../assets/images/introduction-image.jpg';
 import Title from '../../components/Title';
+import LoadingOverlay from 'react-loading-overlay';
 import { MainContainer,
          CasesContainer,
          Case } from './styles';
@@ -30,7 +31,7 @@ export default function CasesPage() {
             caseName: 'Projeto 5'
         }])
     }, []);
-
+ 
     return (
         <MainContainer>
             <Title>Cases</Title>

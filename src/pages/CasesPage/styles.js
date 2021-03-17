@@ -6,6 +6,8 @@ export const MainContainer = styled.div`
     align-items: flex-start;
     justify-content: center;
 
+    flex: 1;
+
     padding: 0 var(--base-padding);
 `;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button';
 import Title from '../../components/Title';
+import Location from '../../pages/Location';
 import { MainContainer,
          ContactsContainer,
          SendMessageContainer,
@@ -57,6 +58,7 @@ export default function ContactPage() {
                     </SideBarSocialMediaContainer>
                 </SideBar>
             </ContactsContainer>
+            <Location />
         </MainContainer>
     );
 }

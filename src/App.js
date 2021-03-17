@@ -10,6 +10,8 @@ import Footer from './pages/Footer';
 import MainContent from './pages/MainContent';
 import CasesPage from './pages/CasesPage';
 import ContactPage from './pages/ContactPage';
+import BudgetPage from './pages/BudgetPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
     return (
@@ -21,6 +23,8 @@ function App() {
                     <Route path="/" exact component={MainContent} />
                     <Route path="/cases" component={CasesPage} />
                     <Route path="/contacts" component={ContactPage} />
+                    <Route path="/budget" component={BudgetPage} />
+                    <Route component={NotFoundPage} />
                 </Switch>
                 
                 <Footer />

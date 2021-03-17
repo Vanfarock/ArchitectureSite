@@ -37,7 +37,7 @@ export default function LastPosts() {
     },];
 
     return (
-        <LastPostsContainer>
+        <LastPostsContainer id="lastPosts">
             <Title>Últimas postagens</Title>
             <Dashboard name="LastPosts" data={data} />
         </LastPostsContainer>

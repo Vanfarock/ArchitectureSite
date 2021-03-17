@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MenuContainer,
          MenuLeftSide,
          Logo,
@@ -10,7 +11,7 @@ export default function Menu() {
     return (
         <MenuContainer>
             <MenuLeftSide>
-                <Logo className="teste">Random name</Logo>
+                <Logo className="teste"><Link to="/">Random name</Link></Logo>
             </MenuLeftSide>
             <MenuList>
                 <MenuListItem>

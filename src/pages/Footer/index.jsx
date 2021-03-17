@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/Button';
+import { Link } from 'react-router-dom';
 import { FooterContainer,
          FooterContent,
          FooterColumn,
@@ -14,12 +15,7 @@ export default function Footer() {
         <FooterContainer>
             <FooterContent>
                 <FooterColumn>
-                    <FooterMenuTitle>Projetos</FooterMenuTitle>
-                    <FooterMenuTitle>Galeria</FooterMenuTitle>
-                    <FooterMenuTitle>Últimas postagens</FooterMenuTitle>
-                </FooterColumn>
-                <FooterColumn>
-                    <FooterMenuTitle>Contatos</FooterMenuTitle>
+                    <FooterMenuTitle><Link to="/contacts">Contatos</Link></FooterMenuTitle>
                     <FooterMenuContent>(47)99999-9999</FooterMenuContent>
                     <FooterMenuContent>(47)99999-9999</FooterMenuContent>
                     <FooterRow>
@@ -28,9 +24,12 @@ export default function Footer() {
                     </FooterRow>
                 </FooterColumn>
                 <FooterColumn>
-                    <FooterMenuTitle>Endereço</FooterMenuTitle>
+                    <FooterMenuTitle><Link to="/contacts">Endereço</Link></FooterMenuTitle>
                     <FooterMenuContent>Rua XXXXXXXXX, 111</FooterMenuContent>
                     <FooterMenuContent>Blumenau, Santa Catarina, Brasil</FooterMenuContent>
+                </FooterColumn>
+                <FooterColumn>
+                    <FooterMenuTitle><Link to="/cases">Cases</Link></FooterMenuTitle>
                 </FooterColumn>
                 <FooterColumn>
                     <Button>Solicitar orçamento</Button>

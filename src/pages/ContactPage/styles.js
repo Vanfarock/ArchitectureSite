@@ -6,7 +6,14 @@ export const MainContainer = styled.div`
     align-items: flex-start;
     justify-content: center;
 
+    justify-self: flex-start;
+    flex: 1;
+
     padding: 0 var(--base-padding);
+
+    & > div {
+        padding: 0;
+    }
 `;
 
 export const ContactsContainer = styled.div`
@@ -60,8 +67,9 @@ export const TextArea = styled.textarea`
 
     width: 50%;
     max-width: 100%;
-
     height: 300px;
+
+    resize: none;
 `;
 
 export const SideBar = styled.div`
