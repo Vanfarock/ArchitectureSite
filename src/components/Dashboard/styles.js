@@ -12,9 +12,6 @@ export const DashboardContainer = styled.div`
     position: relative;
 
     overflow-x: hidden;
-
-    /* border: 1px solid ${props => props.theme.darkerBackgroundColor};
-    border-radius: 3px; */
 `;
 
 export const CardContainer = styled.div`
@@ -69,7 +66,7 @@ export const Arrow = styled(FontAwesomeIcon)`
     top: 50%;
     transform: translateY(-50%);
 
-    z-index: 1;
+    z-index: 10;
 
     &.material-icons.md-36 {
         font-size: 36px;

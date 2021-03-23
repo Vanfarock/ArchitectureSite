@@ -46,7 +46,7 @@ export default function Dashboard(props) {
         <DashboardContainer>
             <Arrow icon="chevron-left" 
                    side="left" 
-                   hide={hideArrows.toString()} 
+                   hide={hideArrows} 
                    className="squared"
                    onClick={() => updatePosition(position + POSITION_MOVEMENT)} />
             <CardContainer ref={cardContainer} position={position}>
@@ -58,7 +58,7 @@ export default function Dashboard(props) {
             </CardContainer>
             <Arrow icon="chevron-right" 
                    side="right" 
-                   hide={hideArrows.toString()} 
+                   hide={hideArrows} 
                    className="squared"
                    onClick={() => updatePosition(position - POSITION_MOVEMENT)} />
         </DashboardContainer>
