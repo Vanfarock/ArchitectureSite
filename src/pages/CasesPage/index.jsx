@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ImageTeste from '../../assets/images/introduction-image.jpg';
+import axios from 'axios';
 import Title from '../../components/Title';
 import { MainContainer,
          CasesContainer,
@@ -8,29 +8,21 @@ import { MainContainer,
 export default function CasesPage() {
     const [cases, setCases] = useState([]);
 
-    useEffect(() => {   
-        setCases([{
-            img: ImageTeste,
-            caseName: 'Projeto 1'
-        },
-        {
-            img: ImageTeste,
-            caseName: 'Projeto 2'
-        },
-        {
-            img: ImageTeste,
-            caseName: 'Projeto 3'
-        },
-        {
-            img: ImageTeste,
-            caseName: 'Projeto 4'
-        },
-        {
-            img: ImageTeste,
-            caseName: 'Projeto 5'
-        }])
+    useEffect(() => {
+        fetchImages();
     }, []);
  
+    const fetchImages = async () => {
+        const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/image`)
+        const updatedCases = response.data.map(c => {
+            return {
+                img: `data:${c.contentType};base64,${Buffer.from(c.content.data).toString('base64')}`,
+                caseName: c.description
+            }
+        })
+        setCases(updatedCases)
+    }
+
     return (
         <MainContainer>
             <Title>Cases</Title>
