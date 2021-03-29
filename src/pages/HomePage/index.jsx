@@ -10,7 +10,7 @@ export default function HomePage() {
     return (
         <HomeContainer>
             <LogoName>Random name</LogoName>
-            <Button><Link to="/cases">Cases</Link></Button>
+            {/* <Button><Link to="/cases">Cases</Link></Button> */}
             <IntroductionImageElement src={IntroductionImage} alt="Imagem de introdução" />
         </HomeContainer>
     )

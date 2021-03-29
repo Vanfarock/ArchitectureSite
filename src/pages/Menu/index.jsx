@@ -21,6 +21,9 @@ export default function Menu() {
                     <MenuListItemLink to="/contacts">Contato</MenuListItemLink>
                 </MenuListItem>
                 <MenuListItem>
+                    <MenuListItemLink to="/about">Sobre</MenuListItemLink>
+                </MenuListItem>
+                <MenuListItem>
                     <MenuListItemLink to="/budget">Solicitar orçamento</MenuListItemLink>
                 </MenuListItem>
             </MenuList>

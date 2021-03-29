@@ -13,7 +13,7 @@ export const MainContainer = styled.div`
 
 export const CasesContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
 `;
 
