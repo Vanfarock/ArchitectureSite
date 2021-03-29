@@ -7,22 +7,20 @@
 5) After installation, run `yarn start`
 
 # TODO
-1) Colocar imagem de introducao como plano de fundo (fazer com 3 imagens, sistema de slide)
-2) Adicionar tela de sobre, com descricao, historia e uma foto
-3) Na tela de Solicitar Orcamento, mana vai me passar exemplo
-4) Adicionar horario de funcionamento na aba de contatos
-5) Buscar avaliacoes do usuario no google (Bruna Balestieri Arquitetura e Interiores)
-5.1) Adicionar aba de avaliacoes
-5.2) Chamar aba de Depoimentos
-6) Remove galeria
+1) Add introduction image as a background (slideshow with 3 images)
+2) Add an about screen, with company description and photo of the architect
+3) Finish **Solicitar Orcamento** screen
+4) Add bussines hours in contacts screen
+5) Integrate Google users review of the company
+6) Remove gallery
 
-Funcionalidades principais:
-1) Cadastro de projetos
-    * Titulo
-    * Descricao
-    * Imagens e imagem principal
-2) Tela Sobre
-    * Historia
-    * Foto
-3) Localizacao
-4) Contatos
+# Main funcionalities:
+1) Project registration
+	* Title
+	* Description
+	* All project images and main image
+2) About screen
+	* History
+	* Architect photo
+3) Location
+4) Contacts screen
