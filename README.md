@@ -14,7 +14,7 @@
 5) Integrate Google users review of the company
 6) Remove gallery
 
-# Main funcionalities:
+# Main funcionalities
 1) Project registration
 	* Title
 	* Description
